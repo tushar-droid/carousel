@@ -1,5 +1,49 @@
+:root{
+    --back-color: #A59D95;
+    --fnt-color: #232b2b;
+}
+
 body{
+    padding: 0;
+    margin:0;
+    height: 100vh;
+    width:100vw;
+    background-color: var(--back-color);
+    color: var(--fnt-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    outline: white solid;
+    height: 80%;
+    width: 60%;    
+    padding: 0;
+}
+
+.carousel-top-section{
+    height: 95%;
+    width:100%;
     background-color: black;
-    color: white;
-    
+}
+
+.carousel-image-container, .carousel-image-container > li{
+    height: 100%;
+    width: 100%;
+    margin-top:0;
+    list-style: none;
+    padding: 0;
+}
+
+.carousel-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-image-container{
+    position: relative;
+}
+.carousel-image-container > li{
+    position: absolute;
 }
