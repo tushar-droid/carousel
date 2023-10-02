@@ -18,32 +18,44 @@ body{
 .carousel-container {
     outline: white solid;
     height: 80%;
-    width: 60%;    
+    width: 70%;    
     padding: 0;
+    overflow: hidden;
+    
+
 }
 
 .carousel-top-section{
-    height: 95%;
-    width:100%;
-    background-color: black;
-}
-
-.carousel-image-container, .carousel-image-container > li{
     height: 100%;
-    width: 100%;
-    margin-top:0;
-    list-style: none;
-    padding: 0;
-}
-
-.carousel-container img{
-    height: 100%;
+    position: relative;
     width: 100%;
 }
 
 .carousel-image-container{
-    position: relative;
+    margin-top:0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    height: 100%;
 }
-.carousel-image-container > li{
+.item{  
+    height: 100%;
+    width: 100%;
+    outline: black solid;
+}
+.img-tag{
+    height: 100%;
+}       
+
+.carousel-left-btn{
     position: absolute;
+    left:1rem;
+    top:50%;
+    transform: translate(0%,-50%);
+}
+.carousel-right-btn{
+    position: absolute;
+    right: 1rem;
+    top:50%;
+    transform: translate(0%,-50%);
 }
