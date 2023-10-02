@@ -18,11 +18,9 @@ body{
 .carousel-container {
     outline: white solid;
     height: 80%;
-    width: 70%;    
+    width: 80%;    
     padding: 0;
     overflow: hidden;
-    
-
 }
 
 .carousel-top-section{
@@ -37,14 +35,17 @@ body{
     padding: 0;
     display: flex;
     height: 100%;
+    width: 100%;
 }
 .item{  
     height: 100%;
-    width: 100%;
+    min-width: 100%;
     outline: black solid;
 }
 .img-tag{
     height: 100%;
+    min-width: 100%;
+    
 }       
 
 .carousel-left-btn{
