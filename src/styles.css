@@ -13,6 +13,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--fnt-color);
 }
 
 .carousel-container {
@@ -20,6 +21,7 @@ body{
     width: 70%;    
     padding: 0;
     overflow: hidden;
+    position: relative;
 }
 
 .carousel-top-section{
@@ -35,6 +37,7 @@ body{
     display: flex;
     height: 100%;
     width: 100%;
+    transition: transform 0.2s ease-in-out;
 }
 .item{  
     height: 100%;
@@ -57,4 +60,33 @@ body{
     right: 1rem;
     top:50%;
     transform: translate(0%,-50%);
+}
+.carousel-bottom-section{
+   position: absolute;
+   bottom: 0px;
+   color: white;
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+.dots-track{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot{
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    border: white solid ;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.active-carousel-dot{
+    opacity: 1;
 }
